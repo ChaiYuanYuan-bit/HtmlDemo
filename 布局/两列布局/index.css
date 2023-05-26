@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.left-box
+{
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: aquamarine;
+}
+.right-box{
+    height: 100%;
+    width: 70%;
+    float: left;
+    background-color: black;
+}

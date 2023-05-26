@@ -1,0 +1,52 @@
+body {
+    min-width: 550px;  /* 2x leftContent width + rightContent width */
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+  #header, #footer {
+    background: rgba(29, 27, 27, 0.726);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+  #footer {
+    clear: both;
+  }
+ 
+  #container {
+    padding-left: 200px;   /* leftContent width */
+    padding-right: 150px;  /* rightContent width */
+    overflow: hidden;
+    height: 100%;
+  }
+ 
+  #container .column {
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 100%;
+    line-height: 300px;
+  }
+ 
+  #center {
+    width: 100%;
+    background: rgb(206, 201, 201);
+  }
+ 
+  #left {
+    width: 200px;           /* leftContent width */
+    /* 此时left和center时兄弟关系，margin-left是left盒子左边界距离center右边界的大小*/
+    margin-left: -100%;
+    /* 此时container有padding，需要让盒子向左移动一个自身的距离*/
+    right: 200px;           /* leftContent width */
+    background: rgba(95, 179, 235, 0.972);
+  }
+ 
+  #right {
+    width: 150px;           /* rightContent width */
+    margin-left: -150px;   /* rightContent width */
+    right: -150px;
+    background: rgb(231, 105, 2);
+  }
+ 
